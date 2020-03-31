@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Flames</title>
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading">
+                    <img src="logo.png" alt="frames logo" class="logo">
+                </div>
+                <div class="card-body">
+                    <h2 class="title">Flames</h2>
+                  
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder=" Your Name" id="your">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder=" Partner Name" id="partner">
+                        </div>
+                    
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" onclick="flames()" type="submit">Submit</button>
+                        </div>
+                  
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div align="center" class="ans">
+        <p id="stat">The Relation is :</p>
+        <p id="demo"></p>
+       <br>
+       <br>
+        <div id="x" class="imag" align="center"></div>
+    </div>
+        
+    
+    </div>
+    
+   
+
+<!--Script starts-->
+<script>
+
+function flames(){
+
+var your = document.getElementById("your").value;
+ var partner = document.getElementById("partner").value;
+
+var user=your.toLowerCase();
+var user1=partner.toLowerCase();
+var split = new Array();
+var split1 = new Array();
+split = user.match(/\S/g);
+split1 = user1.match(/\S/g);
+var i,j,count=0;
+var len1=split.length;
+var len2=split1.length;
+var le=len1+len2;
+for(i=0;i<len1;i++){
+    for(j=0;j<len2;j++){
+        
+        if(split[i]==split1[j]){
+            count++;
+            split1[j]="0";
+            break;
+            
+        }
+        
+    }
+}
+var ans;
+ans=le-(count*2);
+switch(ans) {
+  case 0:
+         var img = document.createElement("img");
+         img.src = "same.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+         break;
+  case 1:
+    document.getElementById("demo").innerHTML ="Sister";
+    var img = document.createElement("img");
+         img.src = "sister.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 2:
+    document.getElementById("demo").innerHTML = "Enemies";
+    var img = document.createElement("img");
+         img.src = "enemy.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 3:
+        document.getElementById("demo").innerHTML = "Friends";
+    var img = document.createElement("img");
+         img.src = "friend.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 4:
+    document.getElementById("demo").innerHTML = "Enemies";
+    var img = document.createElement("img");
+         img.src = "enemy.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 5:
+        document.getElementById("demo").innerHTML = "Friends";
+    var img = document.createElement("img");
+         img.src = "friend.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 6:
+    document.getElementById("demo").innerHTML ="Marriage";
+    var img = document.createElement("img");
+         img.src = "marriage.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 7:
+        document.getElementById("demo").innerHTML ="Enemies";
+    var img = document.createElement("img");
+         img.src = "enemy.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 8:
+    document.getElementById("demo").innerHTML ="Affection";
+    var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 9:
+        document.getElementById("demo").innerHTML = "Affection";
+    var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 10:
+    document.getElementById("demo").innerHTML ="Love";
+    var img = document.createElement("img");
+         img.src = "love.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 11:
+        document.getElementById("demo").innerHTML ="Marriage";
+    var img = document.createElement("img");
+         img.src = "marriage.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 12:
+    document.getElementById("demo").innerHTML ="Affection";
+    var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+         var x = document.getElementById("myAudio");
+         x.autoplay = true;
+        x.load();
+
+ 
+    break;
+   case 13:
+    document.getElementById("demo").innerHTML = "Affection";
+   var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    
+    break;
+  case 14:
+    document.getElementById("demo").innerHTML ="Friends";
+    var img = document.createElement("img");
+         img.src = "friend.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 15:
+        document.getElementById("demo").innerHTML ="Marriage";
+    var img = document.createElement("img");
+         img.src = "marriage.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 16:
+    document.getElementById("demo").innerHTML ="Friends";
+    var img = document.createElement("img");
+         img.src = "friend.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+    case 17:
+        document.getElementById("demo").innerHTML ="Affection";
+    var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 18:
+    document.getElementById("demo").innerHTML ="Friends";
+    var img = document.createElement("img");
+         img.src = "friend.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+     case 19:
+        document.getElementById("demo").innerHTML ="Love";
+    var img = document.createElement("img");
+         img.src = "love.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  case 20:
+    document.getElementById("demo").innerHTML ="Affection";
+    var img = document.createElement("img");
+         img.src = "affection.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+  default:
+  document.getElementById("demo").innerHTML ="Not Found!";
+    var img = document.createElement("img");
+         img.src = "default.png";
+         var src1 = document.getElementById("x");
+         src1.appendChild(img);
+    break;
+
+  break;
+    
+}
+
+
+
+}
+    </script>
+
+</body>
+
+</html>
