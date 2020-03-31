@@ -368,3 +368,7 @@ input {
    left:0;
   }
 }
+.note{
+  font-size:20px;
+  color:red;
+ }
