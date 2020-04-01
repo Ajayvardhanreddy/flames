@@ -43,7 +43,7 @@
                         </div>
                     
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" onclick="flames()" type="submit">Submit</button>
+                            <button class="btn btn--pill btn--green" id="my" onclick="flames()" type="submit">Submit</button>
                         </div>
                   
                 </div>
@@ -73,7 +73,8 @@ function flames(){
 
 var your = document.getElementById("your").value;
  var partner = document.getElementById("partner").value;
-
+document.getElementById("my").disabled = true;
+}
 var user=your.toLowerCase();
 var user1=partner.toLowerCase();
 var split = new Array();
